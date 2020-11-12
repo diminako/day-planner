@@ -16,12 +16,9 @@ for (let i = 9; i < 18; i++) {
     }
 }
 
-for (let i = 9; i < 18; i++) {
-    var textInput = $("#text_" + i)
-}
-
 $(".saveBtn").on("click", function () {
     var clicked = $(this).attr("data-timing")
     var text = $("#text_" + clicked).val()
     localStorage.setItem("hour" + clicked, text)
 })
+
